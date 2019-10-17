@@ -10,7 +10,15 @@ module.exports = {
     description: `Personal blog about my path in the web development world.`,
     author:'Edgar Rojas'
   },
-  plugins: [
+  plugins: [{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     
     `gatsby-transformer-remark`, 
     

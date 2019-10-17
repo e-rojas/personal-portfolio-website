@@ -4,7 +4,7 @@ date: "2019-10-15"
 title: "My Third Post"
 author: "Edgar Rojas"
 tags: ['tech','react']
-image: '../images/test.jpeg'
+image: '../../images/test.jpeg'
 excerpt: "A preview of my first post"
 ---
 This is the third post!!

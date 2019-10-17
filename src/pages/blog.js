@@ -1,17 +1,18 @@
 import React from 'react';
-import { graphql } from 'gatsby'
+import { graphql,Link } from 'gatsby'
 import "../components/blog.css"
 import Header from '../components/header';
 import BlogHeader from '../components/blog-header'
 //import BlogsDisplay from '../components/blogs-display'
+import Img from 'gatsby-image'
 const blog = ({data}) => {
     const { edges } = data.allMarkdownRemark
     console.log(edges);
     return (
-        <div className="container-fluid ">
+        <div className="container-fluid vh-100 ">
             <Header></Header>
-           <div className="row">
-                <aside id="lft-blg-aside" className="col-lg-6 vh-100 ">
+           <div className="row ">
+                <aside id="lft-blg-aside" className="col-lg-6  ">
                     <BlogHeader />
                </aside>
                 <aside id="rgt-blg-aside" className="col-lg-6 pt-5 ">
@@ -26,7 +27,8 @@ const blog = ({data}) => {
                             <div key={frontmatter.path} className="card">
                                 <div className="row">
                                     <div className="col-4">
-                                        <img style={{ width: 150, height: 150 }} src={frontmatter.image} className="img-thumbnail" alt="profile"></img><br/>
+                                    <Img  style={{ width: 150, height: 150 }} fixed={frontmatter.image.childImageSharp.fixed} />
+                                       <br/>
                                         <span>{frontmatter.title}</span><br/>
                                         <span>{frontmatter.date} </span>
               
@@ -39,10 +41,8 @@ const blog = ({data}) => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <p>
-                                            Single-page app built on React.js that allows users to book,
-                                            edit or cancel interviews for each day of the week.
-                </p>
+                                        <p> {frontmatter.excerpt} </p><br/>
+                                        <Link to={frontmatter.path} >Read more...</Link>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +74,13 @@ allMarkdownRemark(
         path
         date
         author
-        image
+        image {
+            childImageSharp {
+                fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+            }
+          }
         excerpt
       }
       timeToRead

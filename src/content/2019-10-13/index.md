@@ -4,7 +4,7 @@ date: "2019-10-13"
 title: "My First Post"
 author: "Edgar Rojas"
 tags: ['tech','react']  
-image: '../images/test.jpeg'
+image: '../../images/test.jpeg'
 excerpt: "A preview of my first post"
 ---
 Canada had to leave the Rugby World Cup tournament in Kamaishi, Japan, without a win Sunday, after their last game was cancelled due to Typhoon Hagibis.

@@ -26,7 +26,7 @@ const blogDisplay = () => {
               </div>
             </div>
           </div>
-    );
+    )
 }
 
 
