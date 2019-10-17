@@ -1,0 +1,56 @@
+.about img {
+	width: 500px;
+	border-radius: 10px;
+	
+}
+.about row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about row col{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.cntr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.name{
+	padding: 10px 0px;
+	font-weight: 700;
+    border-top: thin solid hsla(359,91%,50%,1.00);
+    border-bottom: thin solid hsla(359,91%,50%,1.00);
+}
+.details:before{
+	    content: " ";
+    position: absolute;
+    top: -80;
+    left: 70px;
+    width: 5px;
+    height: 5%;
+    background-color: red;
+    z-index: 1;
+}
+.about-details-col{
+	
+	padding: 0px 90px;
+}
+/*Table*/
+table i{
+	cursor: pointer;
+}
+table i:hover{
+	color: #f15a29;
+}
+
+.signature{
+	font-family: 'Vibes', cursive;
+}
+.pers-details{
+	letter-spacing: 1px;
+    line-height: 33px;
+}
