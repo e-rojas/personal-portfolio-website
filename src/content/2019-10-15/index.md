@@ -8,6 +8,8 @@ image: '../../images/test.jpeg'
 excerpt: "A preview of my first post"
 ---
 This is the third post!!
+## Team 
+Adding a bit more contect to the page.
 Canada had to leave the Rugby World Cup tournament in Kamaishi, Japan, without a win Sunday, after their last game was cancelled due to Typhoon Hagibis.
 
 But even though the cancellation of their Pool B game against Namibia was disappointing to the men's rugby team, they still managed to turn the experience into a rewarding one by helping clean up flood-ravaged areas of the city. 

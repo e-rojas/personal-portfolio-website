@@ -12,7 +12,7 @@ const Template = ({ data, pageContext }) => {
     return (
         <div  id="main" className="container-fluid ">
             <Header />
-            <div className="row vh-100 ">
+            <div style={{minHeight:100,marginTop:80}} className="row  ">
                 <div id="display" className="w-50 m-auto  ">
                     <h1>{title}</h1>
                     <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />  
