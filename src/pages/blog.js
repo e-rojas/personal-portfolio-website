@@ -7,7 +7,7 @@ import BlogHeader from '../components/blog-header'
 import Img from 'gatsby-image'
 const blog = ({data}) => {
     const { edges } = data.allMarkdownRemark
-    console.log(edges);
+    // console.log(edges);
     return (
         <div className="container-fluid vh-100 ">
             <Header></Header>
@@ -26,18 +26,14 @@ const blog = ({data}) => {
                         return (
                             <div key={frontmatter.path} className="card">
                                 <div className="row">
-                                    <div className="col-4">
-                                    <Img  style={{ width: 150, height: 150 }} fixed={frontmatter.image.childImageSharp.fixed} />
+                                    <div className="col">
+                                    <Img  style={{ width: 300 }} fixed={frontmatter.image.childImageSharp.fixed} />
                                        <br/>
-                                        <span>{frontmatter.title}</span><br/>
+                                        <h4>{frontmatter.title}</h4><br/>
                                         <span>{frontmatter.date} </span>
               
                                     </div>
-                                    <div className="col-8">
-               
-                                        <i className="fab fa-react"></i> <i className="fab fa-node"></i>
-                                        <i className="fab fa-js-square"></i>
-                                    </div>
+                                    
                                 </div>
                                 <div className="row">
                                     <div className="col">
@@ -62,6 +58,7 @@ export const blogsDisplay = graphql`
 query blogsDisplay {
 
 allMarkdownRemark(
+    
     sort:{
         order:DESC,
         fields: [frontmatter___date]
@@ -76,7 +73,7 @@ allMarkdownRemark(
         author
         image {
             childImageSharp {
-                fixed(width: 125, height: 125) {
+                fixed(width: 300) {
           ...GatsbyImageSharpFixed
         }
             }
