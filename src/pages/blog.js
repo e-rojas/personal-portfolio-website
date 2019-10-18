@@ -12,11 +12,12 @@ const blog = ({data}) => {
         <div className="container-fluid vh-100 ">
             <Header></Header>
            <div className="row ">
-                <aside id="lft-blg-aside" className="col-lg-6  ">
+                <aside id="lft-blg-aside" className="col-lg-6 vh-100  ">
                     <BlogHeader />
                </aside>
-                <aside id="rgt-blg-aside" className="col-lg-6 pt-5 ">
-                  {/*   {edges.map(edge => {
+                <aside id="rgt-blg-aside" className="col-lg-6 vh-100 pt-5 pb-5 ">
+                    <section style={{ height:'100vh',overflowY:'scroll'}}>
+                              {/*   {edges.map(edge => {
                         const { frontmatter } = edge.node
                         return <BlogsDisplay key={frontmatter.path}  />
                   })} */}
@@ -44,6 +45,7 @@ const blog = ({data}) => {
                             </div>
                         );
                     })}
+                     </section>
                </aside>
            </div>
         </div>
