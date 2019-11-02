@@ -7,8 +7,12 @@
 module.exports = {
   siteMetadata: {
     title: `The Creative Room`,
+    titleTemplate: "Edgar Rojas",
     description: `Personal blog about my path in the web development world.`,
-    author:'Edgar Rojas'
+    author: 'Edgar Rojas',
+    url: "https://erojas.io",
+    image: "/images/portrait.png",
+    twitterUsername: "@erojas_ca"
   },
   plugins: [{
       resolve: `gatsby-source-filesystem`,
