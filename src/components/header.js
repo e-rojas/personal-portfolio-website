@@ -17,10 +17,8 @@ export default () => {
           <ul className="nav justify-content-end">
             <li className="nav-item "><Link activeClassName="activado" className="nav-link " to="/">Home</Link></li>
             <li className="nav-item"><Link activeClassName="activado" className="nav-link " to="/blog">Blog</Link></li>
-            <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">AirBnb</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown  title="Portfolio" id="basic-nav-dropdown">
+        <NavDropdown.Item className='bg-dark' > <Link activeClassName="activado" className="nav-link " to="/courses" >Courses</Link> </NavDropdown.Item>
        
       </NavDropdown>
           </ul>

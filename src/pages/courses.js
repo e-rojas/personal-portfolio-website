@@ -1,6 +1,7 @@
 import React from "react"
 import CourseSale from "../components/_courseSale"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Header from '../components/header';
 const Courses = props => {
   const courses = [
     { name: "Python", price: 33.50, description: "Learn Python in 3 weeks!!" },
@@ -12,8 +13,10 @@ const Courses = props => {
       description: "Learn javaScript the OOP way!!",
     },
   ]
-  return (
-    <div>
+    return (
+     
+        <div>
+        <Header></Header>
       <CourseSale title={props.title} courses={courses} />
     </div>
   )
