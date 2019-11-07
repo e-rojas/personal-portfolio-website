@@ -37,7 +37,7 @@ export default function shop_cards() {
 
 const CardBody = (props) => {
     return (
-        <Card  style={{ width: '25rem',minHeight:'30rem',background:'#f5f5f5',padding:'0px' }}>
+        <Card  style={{ width: '15rem',minHeight:'30rem',background:'#f5f5f5',padding:'0px' }}>
             <div style={{padding:'40px',margin:'0px auto'}}>
             <Card.Img  style={{width:'10rem',margin:'opx auto'}} variant="top" src={props.image} />
 </div>
