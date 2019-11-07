@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import CourseSale from "../components/_courseSale"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from '../components/header';
@@ -26,3 +26,16 @@ Courses.defaultProps = {
 }
 
 export default Courses
+ */
+
+import React from 'react';
+import Carousel from '../components/_carousel';
+import About from '../components/shop_about';
+import Cards from '../components/shop_cards';
+export default () => (
+    <div>
+    <Carousel />
+    <About />
+    <Cards />
+    </div>
+);

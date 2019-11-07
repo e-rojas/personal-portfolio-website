@@ -18,7 +18,7 @@ export default () => {
             <li className="nav-item "><Link activeClassName="activado" className="nav-link " to="/">Home</Link></li>
             <li className="nav-item"><Link activeClassName="activado" className="nav-link " to="/blog">Blog</Link></li>
             <NavDropdown  title="Portfolio" id="basic-nav-dropdown">
-        <NavDropdown.Item className='bg-dark' > <Link activeClassName="activado" className="nav-link " to="/courses" >Courses</Link> </NavDropdown.Item>
+        <NavDropdown.Item className='bg-dark' > <Link activeClassName="activado" className="nav-link " to="/shop" >Bike Shop</Link> </NavDropdown.Item>
        
       </NavDropdown>
           </ul>
