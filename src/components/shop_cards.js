@@ -22,9 +22,10 @@ export default function shop_cards() {
         )
     })
 
-  return (
+    return (
+      
       <Row style={{maxWidth:'80%'}} className='mx-auto' >
-        
+    
              
                   {cards}
         
