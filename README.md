@@ -31,6 +31,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     cd my-hello-world-starter/
     gatsby develop
     ```
+    quick addition on the readme part.
 
 1.  **Open the source code and start editing!**
 
