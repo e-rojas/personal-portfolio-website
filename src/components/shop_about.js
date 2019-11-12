@@ -44,7 +44,7 @@ export default function Shop_about() {
 
   return (
     <div>
-      <Row>{columns}</Row>
+      <Row className='p-5'>{columns}</Row>
     </div>
   )
 }
