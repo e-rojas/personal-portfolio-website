@@ -29,13 +29,15 @@ export default Courses
  */
 
 import React from 'react';
-import Carousel from '../components/_carousel';
+import Header from '../components/header'
+import Carousel from '../components/shop/_carousel';
 import About from '../components/shop_about';
 //import Cards from '../components/shop_cards';
 import Cards from '../components/shop/cards'
 
 export default () => (
-    <div className='container-fluid'>
+  <div className='container-fluid'>
+    <Header />
     <Carousel />
     <About />
    <Cards />
