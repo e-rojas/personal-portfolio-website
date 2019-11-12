@@ -48,7 +48,7 @@ export default function Cards() {
 
   return (
       <div className='text-center'>
-          <h4>Cart Total: ${price.toFixed(2)} </h4>
+          <h4 className={price !== 0  ? 'text-danger':'text-dark'} >Cart Total: ${price.toFixed(2)} </h4>
           <div
       style={{
         display: "flex",
