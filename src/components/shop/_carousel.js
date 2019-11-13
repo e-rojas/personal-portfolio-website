@@ -29,7 +29,7 @@ const _carousel = () => {
     },
   ]
   return (
-    <Carousel style={{marginTop:'70px'}}>
+    <Carousel >
       {info.map((element, index) => {
         return (
           <Carousel.Item key={index}>
