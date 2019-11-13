@@ -16,12 +16,12 @@ export default () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto d-lg-inline-flex">
           <Nav.Link>
-            <Link  className="nav-link " to="/">
+            <Link className="nav-link " to="/">
               Home
             </Link>
           </Nav.Link>
           <Nav.Link>
-            <Link  className="nav-link " to="/blog">
+            <Link className="nav-link " to="/blog">
               Blog
             </Link>
           </Nav.Link>
@@ -29,8 +29,12 @@ export default () => {
         <Nav>
           <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
             <NavDropdown.Item className="bg-dark">
-            
-              <Link activeClassName="activado" className="nav-link " to="/shop">
+              <Link className="nav-link " to="/shop">
+                Bike Shop
+              </Link>
+            </NavDropdown.Item>
+            <NavDropdown.Item className="bg-dark">
+              <Link  className="nav-link " to="/todoApp">
                 Bike Shop
               </Link>
             </NavDropdown.Item>
@@ -41,5 +45,4 @@ export default () => {
   )
 }
 
-
-//update
+//update activeClassName="activado"
