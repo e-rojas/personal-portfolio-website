@@ -35,7 +35,7 @@ export default () => {
             </NavDropdown.Item>
             <NavDropdown.Item className="bg-dark">
               <Link  className="nav-link " to="/todoApp">
-                Bike Shop
+               Todo App
               </Link>
             </NavDropdown.Item>
           </NavDropdown>
