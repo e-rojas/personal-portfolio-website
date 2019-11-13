@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import Header from "../components/header"
 export default class todoApp extends Component {
   constructor(props) {
     super(props)
@@ -44,26 +44,30 @@ export default class todoApp extends Component {
 
   render() {
     return (
-      <div
-        style={{ maxWidth: "800px" }}
-        className="col mx-auto alert-warning  vh-100 p-5 d-flex flex-column justify-content-center align-items-center "
-      >
-        <h1 className="alert-info rounded-lg w-100 p-3 text-center">
-          Todo App
-        </h1>
+      <React.Fragment>
+        <Header />
 
-        <Action
-          optionMessage={this.state.optionMessage}
-          handlePick={this.handlePick}
-          hasOption={this.state.options.length > 0}
-        />
-        <Options
-          handleDeleteOption={this.handleDeleteOption}
-          options={this.state.options}
-          handleDeleteOptions={this.handleDeleteOptions}
-        />
-        <AddOption handleAddOption={this.handleAddOption} />
-      </div>
+        <div
+          style={{ maxWidth: "800px" }}
+          className="col mx-auto alert-warning  vh-100 p-5 d-flex flex-column justify-content-center align-items-center "
+        >
+          <h1 className="alert-info rounded-lg w-100 p-3 text-center">
+            Todo App
+          </h1>
+
+          <Action
+            optionMessage={this.state.optionMessage}
+            handlePick={this.handlePick}
+            hasOption={this.state.options.length > 0}
+          />
+          <Options
+            handleDeleteOption={this.handleDeleteOption}
+            options={this.state.options}
+            handleDeleteOptions={this.handleDeleteOptions}
+          />
+          <AddOption handleAddOption={this.handleAddOption} />
+        </div>
+      </React.Fragment>
     )
   }
 } //end

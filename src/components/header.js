@@ -34,6 +34,12 @@ export default () => {
                 Bike Shop
               </Link>
             </NavDropdown.Item>
+            <NavDropdown.Item className="bg-dark">
+            
+              <Link activeClassName="activado" className="nav-link " to="/todoApp">
+                Todo App
+              </Link>
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
