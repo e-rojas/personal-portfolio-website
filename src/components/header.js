@@ -17,12 +17,12 @@ export default () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link>
-              <Link activeClassName="activado" className="nav-link " to="/">
+              <Link className="nav-link " to="/">
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link activeClassName="activado" className="nav-link " to="/blog">
+              <Link  className="nav-link " to="/blog">
                 Blog
               </Link>
             </Nav.Link>
