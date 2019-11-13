@@ -27,7 +27,7 @@ export default () => {
           </Nav.Link>
         </Nav>
         <Nav>
-          <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
+          <NavDropdown className='mr-5' title="Portfolio" id="collasible-nav-dropdown">
             <NavDropdown.Item className="bg-dark">
             
               <Link activeClassName="activado" className="nav-link " to="/shop">
