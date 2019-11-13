@@ -27,17 +27,11 @@ export default () => {
           </Nav.Link>
         </Nav>
         <Nav>
-          <NavDropdown className='mr-5' title="Portfolio" id="collasible-nav-dropdown">
+          <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
             <NavDropdown.Item className="bg-dark">
             
               <Link activeClassName="activado" className="nav-link " to="/shop">
                 Bike Shop
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item className="bg-dark">
-            
-              <Link activeClassName="activado" className="nav-link " to="/todoApp">
-                Todo App
               </Link>
             </NavDropdown.Item>
           </NavDropdown>
