@@ -3,7 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: `The Creative Room`,
@@ -14,7 +16,14 @@ module.exports = {
     image: "/images/portrait.png",
     twitterUsername: "@erojas_ca"
   },
-  plugins: [{
+  plugins: [
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ["GATSBY_API_KEY", "MY_OTHER_VAR"]
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
