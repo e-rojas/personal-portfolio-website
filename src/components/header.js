@@ -6,10 +6,10 @@ import { NavDropdown, Navbar, Nav } from "react-bootstrap"
 
 export default () => {
   return (
- feature/navFix
+ 
     <div>
 
- master
+ 
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Link className="navbar-brand" to="/"> Edgar Rojas </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -22,21 +22,21 @@ export default () => {
             <NavDropdown.Divider />
             <Link className="nav-link text-dark " to="/shop"> Bike Shop</Link>
             <NavDropdown.Divider />
- feature/navFix
-            <Link className="nav-link text-dark " to="/movies"> Movie Info</Link>
 
-            <Link className="nav-link text-dark " to="/films"> Film Info</Link>
-master
+            <Link className="nav-link text-dark " to="/movies"> Get Movie Info</Link>
+
+           
+
           </NavDropdown>
           
         </Nav>
     
       </Navbar.Collapse>
     </Navbar>
- feature/navFix
+
     </div>
 
    
- master
+
   )
 };
