@@ -12,12 +12,12 @@ export default function carousel(props) {
       }}
       className="container-fluid mt-5 "
     >
-      <Carousel style={{ width: "400px" }}>
+      <Carousel style={{ width: "200px",height:'300px' }}>
         {props.posters.map((element, index) => {
           return (
             <Carousel.Item key={index}>
               <img
-                style={{ width: "400px" }}
+                style={{ width: "200px",height:'300px' }}
                 className="d-block "
                 src={element.img}
                 alt=""
