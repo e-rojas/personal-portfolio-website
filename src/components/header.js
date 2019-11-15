@@ -22,7 +22,8 @@ export default () => {
             <NavDropdown.Divider />
             <Link className="nav-link text-dark " to="/shop"> Bike Shop</Link>
             <NavDropdown.Divider />
-
+            <Link className="nav-link text-dark " to="/movie"> Movie Info</Link>
+            <NavDropdown.Divider />
            
 
            
