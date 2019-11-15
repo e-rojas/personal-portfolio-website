@@ -1,11 +1,34 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../components/header"
 import Carousel from "../components/movies/carousel"
+import SearchBar from '../components/movies/searchBar'
+import axios from "axios"
+import DisplayMovieInfo from '../components/movies/displayFilmInfo'
 export default function Movies(props) {
+  let [filmInfo, setFilmInfo] = useState({})
+  const key_id = process.env.GATSBY_API_KEY
+
+  const handleSearch = (title, movieYear) => {
+    console.log("Title", title)
+    const search = title
+    axios
+      .get(` http://www.omdbapi.com/?t=${search}&apikey=${key_id}`)
+      .then(res => {
+        setFilmInfo(res.data)
+         
+        
+      })
+      .catch(err => {
+        alert(err)
+      })
+  }
+
   return (
     <div style={{ background: "black", minHeight: "100vh" }}>
       <Header />
-      <Carousel posters={props.posters} />
+          <Carousel posters={props.posters} />
+          <SearchBar handleSearch={handleSearch} /> 
+          <DisplayMovieInfo filmInfo={filmInfo} />
       {/*  <Header />
       <Carousel posters={props.posters} />
       <Search handleSearch={handleSearch} /> 
