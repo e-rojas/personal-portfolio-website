@@ -12,7 +12,7 @@ export default function Movies(props) {
     console.log("Title", title)
     const search = title
     axios
-      .get(` http://www.omdbapi.com/?t=${search}&apikey=${key_id}`)
+      .get(` https://www.omdbapi.com/?t=${search}&apikey=${key_id}`)
       .then(res => {
         setFilmInfo(res.data)
          
