@@ -34,7 +34,7 @@ export default function DisplayFilmInfo(props) {
                 </div>
             </div>
             <div className="col-lg-4 text-center ">
-                <img style={{width:'300px'}}  alt='none' src={props.filmInfo.Poster} />
+                <img style={{ width: '200px', height:'300px'}}  alt='none' src={props.filmInfo.Poster} />
             </div>
        </div>
     )
