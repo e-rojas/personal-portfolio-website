@@ -81,3 +81,22 @@ p{
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
+  @media only screen and (max-width: 600px) {
+  .jumbotron{
+     padding-top: 50px;
+   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../../images/shape2.png");
+   /*   background-image: url("images/bg1.png");*/
+     min-height: 100vh;
+      background-position:center;
+      background-size:auto;
+      background-repeat: no-repeat;
+      border-radius: 0px !important;
+      color: #fff;
+      margin-top: 6px;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+ }

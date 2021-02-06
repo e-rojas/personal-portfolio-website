@@ -2,6 +2,10 @@ import React from "react"
 import "./layout.css"
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+faGripVertical
+} from "@fortawesome/free-solid-svg-icons";
 import { NavDropdown, Navbar, Nav } from "react-bootstrap"
 
 export default () => {
@@ -13,7 +17,7 @@ export default () => {
           Edgar Rojas{" "}
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" >
-        <i className="fas fa-grip-vertical"></i>
+        <FontAwesomeIcon icon={faGripVertical} />
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
