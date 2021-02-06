@@ -1,102 +1,102 @@
-.jumbotron{
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../../images/shape2.png");
-/*   background-image: url("images/bg1.png");*/
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../../images/shape2.png");
+  /*   background-image: url("images/bg1.png");*/
   min-height: 70vh;
-   background-position:center;
-   background-size:cover;
-   background-repeat: no-repeat;
-   border-radius: 0px !important;
-   color: #fff;
-   margin-top: 6px;
-   background-attachment: fixed;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   
-   
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px !important;
+  color: #fff;
+  margin-top: 6px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-p{
-   font-size: 18px;
+p {
+  font-size: 18px;
 }
-.blockquote p{
-   color: rgba(233, 233, 233, 0.747);
+.blockquote p {
+  color: rgba(233, 233, 233, 0.747);
 }
 
-.display-4{
-   font-weight: 700;
+.display-4 {
+  font-weight: 700;
 }
-.lead{
-   margin-top: 30px;
+.lead {
+  margin-top: 30px;
 }
 .jumbotron btn {
-   
-   background: #3B5D85;
-   color: #fff;
-
+  background: #3b5d85;
+  color: #fff;
 }
-.hello{
-   color: #f15a29;
-   font-weight: 700;
+.hello {
+  color: #f15a29;
+  font-weight: 700;
 }
 /* Hovering effect */
 /* Shutter In Horizontal */
 .hvr-shutter-in-horizontal {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    background: #053a4b;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #053a4b;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f15a29;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-horizontal:hover,
+.hvr-shutter-in-horizontal:focus,
+.hvr-shutter-in-horizontal:active {
+  color: white;
+}
+.hvr-shutter-in-horizontal:hover:before,
+.hvr-shutter-in-horizontal:focus:before,
+.hvr-shutter-in-horizontal:active:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    background-image: linear-gradient(63deg, #0186ab 0%, #acc7cb 100%);
+
+    min-height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px !important;
+    color: #fff;
+    margin-top: 6px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .hvr-shutter-in-horizontal:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #f15a29;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
-    color: white;
-  }
-  .hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-  }
-  @media only screen and (max-width: 600px) {
-  .jumbotron{
-     padding-top: 50px;
-   background-image: url("../../images/shape2.png");
-   /*   background-image: url("images/bg1.png");*/
-     min-height: 100vh;
-      background-position:center bottom;
-      background-size:cover;
-      background-repeat: no-repeat;
-      border-radius: 0px !important;
-      color: #fff;
-      margin-top: 6px;
-      background-attachment: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
- }
+}
