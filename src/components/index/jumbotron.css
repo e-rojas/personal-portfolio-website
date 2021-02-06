@@ -84,11 +84,11 @@ p{
   @media only screen and (max-width: 600px) {
   .jumbotron{
      padding-top: 50px;
-   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("../../images/shape3.png");
+   background-image: url("../../images/shape3.png");
    /*   background-image: url("images/bg1.png");*/
      min-height: 100vh;
-      background-position:bottom;
-      background-size:cover;
+      background-position:center bottom;
+      background-size:contain;
       background-repeat: no-repeat;
       border-radius: 0px !important;
       color: #fff;
