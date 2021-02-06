@@ -9,6 +9,13 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons"
 export default function Skills() {
+    const [state,setState] = React.useState({speed:0,distance:0,direction:'NE'})
+    React.useEffect(()=>{
+        const interval = setInterval(() => {
+            setState((prev)=>({...prev,speed:state.speed + 7}))
+        }, 1000);
+        return ()=> clearInterval(interval)
+    },[state])
   return (
     <div className="container-fluid skills-section ">
       <div className="row   justify-content-center h-100">
@@ -30,7 +37,7 @@ export default function Skills() {
             { icon: faSass, color: "clr-1" },
             { icon: faReact, color: "clr-2" },
           ].map((bar, index) => (
-            <ProgressBar key={index} {...bar} />
+            <ProgressBar key={index} {...bar} speed={state.speed}/>
           ))}
         </div>
       </div>
