@@ -6,7 +6,7 @@ import './about.css'
 import './main.css'
 
 export default ({ children }) => (
-  <div className='container-fluid  vh-100 '>
+  <div className='container-fluid  vh-100 p-0 '>
     {children}
   </div>
 )

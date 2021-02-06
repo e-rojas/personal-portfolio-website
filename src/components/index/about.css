@@ -1,4 +1,4 @@
-.about img {
+/* .about img {
 	width: 500px;
 	border-radius: 10px;
 	
@@ -39,7 +39,7 @@
 	
 	padding: 0px 90px;
 }
-/*Table*/
+
 table i{
 	cursor: pointer;
 }
@@ -53,4 +53,7 @@ table i:hover{
 .pers-details{
 	letter-spacing: 1px;
     line-height: 33px;
+} */
+.about{
+	font-size: 18px;
 }

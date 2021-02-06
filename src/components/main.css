@@ -1,47 +1,5 @@
-main{
-	margin-top: 150px;
-}
-.portfolio {
-	
-
-	min-height: 400px;
-}
-
-.card {
-	padding: 40px;
-	min-height: 200px;
-	margin: 30px;
-}
-
-.card hr:after {
-	  content: " ";
-    position: absolute;
-    top: -80;
-    left: 20px;
-    width: 60px;
-    height: 5%;
-    background-color: #000;
-    z-index: 1;
-	
-	
-}
-.card hr {
-	color: #fff;
-	width: 1px;
-}
-.card i {
-	
-	padding: 20px;
-	font-size: 22px;
-	margin: 0px!important;
-}
-
-.rgt-port-card {
-	margin-top: 30px;
-}
-.lft-port-card span{
-	font-weight: bold;
-}
-.rgt-port-card span {
-	font-weight: bold;
+*{
+	padding: 0px;
+	margin: 0px;
+	scroll-behavior: smooth;
 }
