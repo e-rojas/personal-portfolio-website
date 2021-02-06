@@ -84,9 +84,10 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .jumbotron {
+     padding-top: 50px !important;
     background-image: linear-gradient(63deg, #0186ab 0%, #acc7cb 100%);
 
-    min-height: 70vh;
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
